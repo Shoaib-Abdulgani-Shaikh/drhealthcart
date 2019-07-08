@@ -1,0 +1,13 @@
+{
+    "web":
+    {
+        "client_id":"58649807587-fu89c196dd0v7qjv69mk0umu3grv9798.apps.googleusercontent.com",
+        "project_id":"drhealthcart",
+        "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+        "token_uri":"https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+        "client_secret":"Sg7VjRmInTbNtQN9-S6mnkLc",
+        "redirect_uris":["https://drhealthcart.herokuapp.com/auth/google/redirect","http://localhost:5000/auth/google/redirect"],
+        "javascript_origins":["https://drhealthcart.herokuapp.com","http://localhost:5000"]
+        }
+    }

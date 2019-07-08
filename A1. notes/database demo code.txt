@@ -1,0 +1,11 @@
+
+//______________________________________Demo schema____________________________________________________________________________________________________________________________________________//
+// var User = require('./controllers/database-controllers/users-database-controller');
+// var newuser = new User({gmail:"dhanehspawarbyheroku"})
+// newuser.save((err)=>{if (err) throw console.log("this is errror ",err);console.log("user saved");})
+
+// var userSchema = new mongoose.Schema({username : String});
+// var User = mongoose.model( "users" , userSchema);
+// var newuser = new User({username:"dhanehspawarbyheroku"})
+// newuser.save((err)=>{if (err) throw console.log("this is errror ",err);console.log("user saved");})
+

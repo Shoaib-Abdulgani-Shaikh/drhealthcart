@@ -1,0 +1,39 @@
+@media only screen and (min-width: 600px)
+{
+    .mycard
+    {
+        margin-left: 10%;
+        border-radius: 5px;
+        background: whitesmoke;
+        padding-left: 5%;
+        padding-top:2%; 
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .mycard
+    {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+
+
+}  
+
+/* body
+{
+    background: green;
+} */
+
+.header p
+{
+    color: #7C216F;
+    background: white;
+    font-size: 35px;
+    float: right;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}

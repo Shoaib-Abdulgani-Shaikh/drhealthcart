@@ -1,0 +1,20 @@
+1. product 
+2. phone call appointment
+3. personal appointment
+
+show it to user - myactivity - all product, phone call appointment and personal appointment
+              
+show it to doctor - all orders
+                  - all phone call appointments
+                  - all personal appointments
+
+activity 
+
+user - book product
+     - phone 
+     - personal
+
+doctor - marks product as done
+       - marks phone as done
+       - marks personal as done
+        

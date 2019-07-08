@@ -1,0 +1,35 @@
+1. change the api keys 
+2. change the color so that they can look the same mobile css
+
+3. hosting the site on his account should take at least 9 days, that is upto 20 june
+
+
+
+
+1. take home remdies and symtops below each other
+
+2.  100% based on Ayurved and no side effects
+ buy medicine button 
+
+3. phone call appointment
+
+4. book appointment for
+   three buttons - 1. tomarraw 2. day after tomarraw 3. date
+
+   ----------------------
+
+   special medicines
+
+   -------------------------
+
+   payment successful notification
+
+   -------------------------------
+
+BY sigNING IN YOUR AGREE TO OUR TERMS AND PRIVACY POLICY
+
+----------------------------------------------
+
+offline councultancy will have no charges
+
+Personal Appointment (Free)

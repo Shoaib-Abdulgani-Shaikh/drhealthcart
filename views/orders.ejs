@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hairfall</title>
+      <!--Google font integration for nestimatic head-->
+      <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="myac.css">
+
+      <!--For sign in with google button -->
+      <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <script>
+      function myfunction() {
+        alert("hello")
+      }
+      </script>
+    </head>
+    <body>
+
+        <h1 style="color:white;" class="header">
+            <center>
+              My Orders
+            </center> </h1>
+    <br>
+
+      <div class="mycard3" id="activities">
+        
+
+
+            <div class="row">
+                    <div class="col s12 m12">
+                      <div class="card red darken-1">
+                        <div class="card-content white-text">
+                                            
+
+                          <span class="card-title">  <i class="medium material-icons right">business_center</i> Medincines</span> <br>
+                          <ul>
+                            <li><b>Medincines for :</b> Piles</li><br>
+                            <li><b>Name :</b> ABC</li><br>
+                            <li><b>Surname :</b> XYZ</li><br>
+                            <li><b>Phone : </b> 9028969149</li>
+                            <li><b>Country : </b> India</li>
+                            <li><b>State : </b> Maharashtra</li>
+                            <li><b>District : </b> Pune</li>
+                            <li><b>Pincode : </b> 411034</li>
+                            <li><b>Address :</b></li> <center>
+                                      <div>
+                                        <p> Dr. HealthCart, <br>
+                                            Vishal Residency, <br>
+                                            Near Yamaha Showroom, <br>
+                                            Mumbai-Pune Highway, <br>
+                                            Kasarwadi, Pune <br>
+                                    </div>
+                                  </center>
+                            
+                                  <a id="aboveaddress" class="waves-effect white black-text btn right" style="text-transform: none;">Delivered ?</a>
+                   
+                            </li>
+                      
+                            <br>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                        <div class="col s12 m12">
+                          <div class="card white darken-1">
+                            <div class="card-content black-text">
+                              <span class="card-title"> <i class="medium material-icons right">business_center</i> Medincines</span> <br>
+                              <ul>
+                                <li><b>Medincines for :</b> Hair-Fall</li><br>
+                                <li><b>Name :</b> Dhanesh</li><br>
+                                <li><b>Surname :</b> Pawar</li><br>
+                                <li><b>Phone : </b> 9028969149</li>
+                                <li><b>Country : </b> India</li>
+                                <li><b>State : </b> Maharashtra</li>
+                                <li><b>District : </b> Pune</li>
+                                <li><b>Pincode : </b> 411034</li>
+                                <li><b>Address :</b></li> <center>
+                                          <div>
+                                            <p> Dr. HealthCart, <br>
+                                                Vishal Residency, <br>
+                                                Near Yamaha Showroom, <br>
+                                                Mumbai-Pune Highway, <br>
+                                                Kasarwadi, Pune <br>
+                                        </div>
+                                      </center>
+                                      <a id="aboveaddress" class="waves-effect white black-text right" style="text-transform: none;">Delivered !</a>
+                             
+                                </li>
+                          
+                                <br>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+      </div>
+      <div class="header">
+          <p> <i>drhealthcart.com</i> </p>
+        </div>      
+       
+        <script src="js/jquery-3.2.1.min.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script>
+      $(document).ready(function() {
+        $('select').material_select();
+      });
+     </script>
+       <!--For sign-in with google button-->
+      <script>
+          function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+          }
+          function onFailure(error) {
+            console.log(error);
+          }
+          function renderButton() {
+            gapi.signin2.render('my-signin2', {
+              'scope': 'profile email',
+              'width': 240,
+              'height': 50,
+              'longtitle': true,
+              'theme': 'dark',
+              'onsuccess': onSuccess,
+              'onfailure': onFailure
+            });
+          }
+        </script>
+      
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    </body>
+  </html>

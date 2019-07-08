@@ -1,0 +1,191 @@
+@media only screen and (min-width: 600px)
+{
+    .mycard
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 5px;
+        background: whitesmoke;
+    }
+    .mainsize
+    {
+        font-size: 35px;
+    }
+    .mycard2
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 5px;
+        padding: 2%;
+        background: white;
+    }
+
+    .mycard3
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 5px;
+        padding: 2%;
+        background: white;
+    }
+
+    .myactivitybutton
+    {
+        float:right;
+        margin: 50px; 
+        background: white;
+    }
+  
+}
+
+@media only screen and (max-width: 600px)
+{
+    .mycard
+    {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+
+    .mycard3
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+        padding: 2%;
+        background: white;
+    }
+  
+    .myactivitybutton
+    {
+        float:right;
+        margin: 5%; 
+        background: white;
+    }
+}  
+
+body
+{
+    background: green;
+}
+
+.header p
+{
+    color: white;
+    font-size: 25px;
+    float: right;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cardquestions
+{
+    font-size: 30px;
+}
+
+@media only screen and (min-width: 600px)
+{
+  #topsignindiv
+      {
+        position:absolute;
+        top: 20%;
+        left: 28%;         
+      }
+  
+}
+@media only screen and (max-width: 600px)
+{
+  #topsignindiv
+      {
+        position:absolute;
+        top: 20%;
+        left: 0%;         
+      }
+  
+}    
+      #topsignindivinner
+      {
+        margin: 20px;
+        background: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        box-shadow: 0 50px 20px -20px #333;
+        border-bottom: 1px solid #1f1209;
+      }
+
+        .packeageit
+        {
+          margin-right: 10px;
+
+          box-shadow: 0 20px 20px -20px #333;
+  border:none;
+ 
+  font-size: 18px;
+
+  background-color: green;
+  color: white;
+  
+  border-radius: 5px;
+  padding: 2%;
+  
+  cursor: pointer;
+  margin-bottom: 20px;
+        }
+
+          a {
+            color: none;
+            text-decoration: none; /* no underline */
+          }
+          *, *:before, *:after {
+            box-sizing: border-box;
+          }
+          .g-sign-in-button {
+            margin: 10px;
+            display: inline-block;
+            width: 240px;
+            height: 50px;
+            background-color: #4285f4;
+            color: #fff;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+            transition: background-color .218s, border-color .218s, box-shadow .218s;
+          }
+          .g-sign-in-button:hover {
+            cursor: pointer;
+            -webkit-box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
+            box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
+          }
+          .g-sign-in-button:active {
+            background-color: #3367D6;
+            transition: background-color 0.2s;
+          }
+          .g-sign-in-button .content-wrapper {
+            height: 100%;
+            width: 100%;
+            border: 2px solid transparent;
+          }
+          .g-sign-in-button img {
+              width: 18px;
+              height: 18px;
+          }
+          .g-sign-in-button .logo-wrapper {
+             padding: 15px;
+             background:#fff;
+             width: 48px;
+             height: 100%;
+             border-radius: 1px; 
+             display: inline-block;
+          }
+          .g-sign-in-button .text-container {
+              font-family: Roboto,arial,sans-serif;
+              font-weight: 500;
+              letter-spacing: .21px;
+              font-size: 16px;
+              line-height: 48px;
+              vertical-align: top;
+              border: none;
+              display: inline-block;
+              text-align: center;
+              width: 180px;
+          }

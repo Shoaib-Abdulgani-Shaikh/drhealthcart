@@ -1,0 +1,152 @@
+
+//////////////////// the file structure for the backend
+/* 
+   1. api         -  for all api request 
+   2. database    -  for all database contollers
+   3. controllers -  for all page requests
+   4. routes      -  for all  remainnif routes and fallback url
+*/
+
+
+//-----------------------------------------------------------------------------communicate
+
+pages get request 
+1. home 
+2. post page
+3. friends page
+4. my profile page
+5. friends profile page
+
+// api request
+.
+
+
+// loaders from the following apis
+1 
+8
+13 
+17
+
+// operations from the following apis
+2 3 4 5 6 7 
+
+9 10 11 12 
+
+14 15 16 
+
+18 
+
+
+
+there will be three pages in communicate
+
+for post take carousal for multiple images and change below command
+                                   | names for this pages 
+1. home page of communicate        |  home 
+    no page for date               |       
+    no page for comment            | 
+2. post page                       |  socialpost
+3. friends page                    |  myfriends
+4. profile page                    |  myprofile
+5. friends profile page            |  friendprofile
+
+now loader request for this pages
+
+------- home page ----------
+
+1. get commuinicate data - all posts of his friends of current data
+2. get all posts by date
+3. post the comment to the backend
+
+now request on a post box 
+                                       ----- head -- where there is  1. profile photo 2. name 3. close button 
+4. only delete post request if clicked on close button 
+                                       ---- photo --- there is no request on photo
+                                        ---- bottom -- where there is 1. like button 2. show description or show likes button 
+5. like button post request 
+6. button to show details of likes ( if there are more than 10 likes then show it on sererate page but this will we do might later)
+
+----------- post page -------------------
+7. post the social media post to backend by savings all images to the firebase stoage
+
+----------- friends page -----------------
+8. show friends suggestions as soon as this page is loaded
+9. serach person to add as a friend
+10. add friend
+11. show friends
+12. delete or unfriend a friend
+
+--------------- profile page -------------------
+13. profile data by default query to retrive all the data about the user from the database 
+14. profile image changed (if user click to change his profile , redirect him to seperate page which will same as post page and then from their diresct give opstion to choose new file)
+15. profile data edited ( for profile data keep it as it is before just give seperate yes or no option to change data and make the request by just sending the changed data name and value to backend)
+16. show only my posts by date
+
+----------------- friends profile page -------------------
+17. retrive by default all the details of the user's freind from the database and show it to him like nestinmatic id, profile and much more ..
+18. show post of friend by date
+
+ and then *********** socket ************* ----
+//socket
+// 1. update likes 
+// 2. update posts and give new posts notification at top screen to the user
+// 3. two notificatrion 
+//  3.1 - you got like 
+//  3.2 - you got friend request
+//  3.3 - your friend request accepted
+//  and some extra =-------------------
+//  3.4 - you got proposal on minmatch
+//  3.5 -  you proposal matched on mindmatch
+
+notification id will be like follows 
+1. you got like on communicate for a post by (save the info of liker and show it to user)
+2. there are new posts on communicate
+3. you got friend request on commuinicate
+4. you got proposal on communicate
+5. your proposal matched on mindmatch
+__________________________________________________________ end of commuinicate
+
+
+
+//mindmatch
+//pages getrequeset
+// 1. mindmatch
+
+//api request
+// 1. get mindmatch data of user 
+// 2. search user  
+// 3. send proposal
+// 4. delete prpoposal
+
+//crackmi
+//pages get request
+// 1. crackmi
+// 2. content
+
+//api request
+// 1. send mood
+// 2. send reason
+// 3. get content for content page by reason and mood
+
+
+________________ this was earlier data defined before above data so not useful now
+
+
+
+-// 1. get communicate data 
+-// 2. send comment 
+-// 3. send post
+-// 4. get posts by date
+-// 5. get freinds data
+-// 9. add friend 
+-// 10. delete friend
+-// 6. show friends suggestion data
+// 7. profile image change  
+// 8. profile data edited 
+
+// social media post 
+// 1. show profile of post owner by clicking on its name
+// 2. delete post 
+// 3. like post 
+// 4. show details of likes of that perticular post
+

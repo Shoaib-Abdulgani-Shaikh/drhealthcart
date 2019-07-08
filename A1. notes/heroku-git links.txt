@@ -1,0 +1,5 @@
+https://nestimatic.herokuapp.com/ 
+https://git.heroku.com/nestimatic.git
+
+git push heroku master
+heroku local web
