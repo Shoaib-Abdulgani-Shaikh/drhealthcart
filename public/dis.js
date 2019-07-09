@@ -66,7 +66,6 @@ function fullnoticepsnl(id,val){
         $("#pdatep").empty();
         $("#pdatep").html(insertext);
         
-  
        }
        else
        {
