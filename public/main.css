@@ -2,7 +2,6 @@
 {
     .mycard
     {
-        margin-left: 10%;
         border-radius: 5px;
         background: whitesmoke;
         padding-left: 5%;
@@ -36,4 +35,52 @@
     float: right;
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
+}
+.tiles
+{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+  
+
+.tiles img
+{
+    display: inline;
+    height: 210px;
+    width: 310px;
+  margin: 5px;
+    border: 5px solid #7C216F;
+    border-radius: 5%;
+}
+
+.drlogo
+{
+    display: inline;
+    height: 310px;
+    width: 310px;
+  margin: 5px;
+    border: 5px solid #7C216F;
+    border-radius: 100%;
+}
+
+
+.drlogo img
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+        border-radius: 100%;
+}
+
+.otherdis{
+    display: inline;
+    height: 110px;
+    width: 310px;
+  margin: 5px;
+    border: 5px solid purple;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #7C216F;
+    background: #FCE2E1;
+  
 }

@@ -39,6 +39,12 @@ module.exports = function (app,authCheck)
      res.render('hairfall_2');
   }); 
 
+  app.get('/piles',authCheck,(req,res)=>
+  {
+    
+     res.render('hairfall_2');
+  }); 
+
   app.get('/hairfall2',(req,res)=>
   {
     res.render('hairfall_2');
