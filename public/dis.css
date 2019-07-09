@@ -4,7 +4,7 @@
     {
         margin-left: 20%;
         margin-right: 20%;
-        border-radius: 5px;
+        border-radius: 50%;
         background: whitesmoke;
     }
     .mainsize
@@ -34,6 +34,7 @@
         float:right;
         margin: 50px; 
         background: white;
+        clear: both;
     }
   
 }
@@ -62,6 +63,7 @@
         float:right;
         margin: 5%; 
         background: white;
+        clear: both;
     }
 }  
 
