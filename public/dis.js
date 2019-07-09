@@ -14,8 +14,8 @@ function fullnotice(id,val){
        if (data == "success")
        {
         var insertext = "All appoitments of " + val + " are booked, please select another date."
-        $("#cdatep").hide();
-        $("#cdatep").show();
+        $("#cdatep").hide(1000);
+        $("#cdatep").show(1000);
       
         $("#cdatep").empty();
         $("#cdatep").html(insertext);
@@ -61,8 +61,8 @@ function fullnoticepsnl(id,val){
         var insertext = "All appoitments of " + val + " are booked, please select another date."
         
 
-        $("#pdatep").hide();
-        $("#pdatep").show();
+        $("#pdatep").hide(1000);
+        $("#pdatep").show(1000);
       
         $("#pdatep").empty();
         $("#pdatep").html(insertext);
