@@ -59,7 +59,6 @@ function fullnoticepsnl(id,val){
        if (data == "success")
        {
         var insertext = "All appoitments of " + val + " are booked, please select another date."
-        
 
         $("#pdatep").hide();
         $("#pdatep").fadeIn(1000);
