@@ -139,37 +139,10 @@ module.exports = function (app,authCheck)
   }); 
 
 
-  app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
-{
-  var onetwo = "http://localhost:5000/placeorderpure?dis="+req.query.dis;
-  res.redirect(onetwo)
-
-//   Insta.setKeys('14ada57a8b82be0c1321101954d3bd2a', 'a5f369de84391497644e774477bf4e3a');
-//   var data = new Insta.PaymentData();
  
-// data.purpose = "Test";            // REQUIRED
-// data.amount = 100;                  // REQUIRED
-// data.redirect_url = "http://localhost:5000/placeorderpure?dis="+req.query.dis;
- 
-// Insta.createPayment(data, function(error, response) {
-//   if (error) {
-//     console.log("this error occured ",error)
-//     // some error
-//   } else {
-//     // Payment redirection link at response.payment_request.longurl
-//     console.log("--------------response ___________________________________")
-//     console.log(response);
-//     const responseData = JSON.parse(response)
-//     console.log("--------------response ___________________________________")
-//     console.log(responseData.payment_request.longurl)
-//     res.redirect(responseData.payment_request.longurl)
-//   }
-// });
-
-  })
 
 //real ones
-app.get('/placeorderpure',urlencodedParser,authCheck,(req,res) =>
+app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
 {
 
   var datetime = new Date();
