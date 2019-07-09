@@ -58,12 +58,15 @@ function fullnoticepsnl(id,val){
 
        if (data == "success")
        {
-         var catchid = '#' + id + 'p'
-         console.log(catchid)
-         var insertext = "All appoitments of " + val + " are booked, please select another date."
-         $(catchid).text(insertext);
- 
-         $(catchid).show(1000);
+        var insertext = "All appoitments of " + val + " are booked, please select another date."
+        
+
+        $("#pdatep").hide();
+        $("#pdatep").show();
+      
+        $("#pdatep").empty();
+        $("#pdatep").html(insertext);
+        
   
        }
        else
