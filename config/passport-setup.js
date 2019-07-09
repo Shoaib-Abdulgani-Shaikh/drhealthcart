@@ -12,7 +12,8 @@ passport.deserializeUser((user,done)=>{
 passport.use(
     new GoogleStrategy({
         //options for the google strategy
-        callbackURL:'/auth/google/redirect',
+        // /auth/google/redirect
+        callbackURL:'http://www.drhealthcart.com/auth/google/redirect',
         clientID:'58649807587-fu89c196dd0v7qjv69mk0umu3grv9798.apps.googleusercontent.com',
         clientSecret:'Sg7VjRmInTbNtQN9-S6mnkLc'
     },(accessToken,refreshToken,profile,done)=>{
