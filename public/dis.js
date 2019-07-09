@@ -131,18 +131,7 @@ $(document).ready(function()
   })
   
 
-  $(".packeageit").click(function()
-  {
-    $("#topsignindiv").hide();
-    $("#topsignindiv").show(1000);
-        
-    $('html, body').animate(
-        {
-            scrollBottom: $("#topsignindiv").offset().top
-        },
-         2000);
-    
-  })
+  
   
   $("#buymed").click(function()
   {
