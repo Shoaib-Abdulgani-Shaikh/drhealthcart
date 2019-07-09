@@ -72,6 +72,16 @@
    {
     display: inline;
     }
+    .warn p
+    {
+      margin-bottom: 20px;
+      color: white
+                     
+    }
+    .warn{
+      background: red;border-radius: 5px;
+      
+    }
 </style>        
     </head>
     <body style="background: whitesmoke;">
@@ -201,8 +211,10 @@
                       </div>
                     <div class="card-content white-text">
                      <p style="font-size: 25px"> Book Phone Call Appoinment</p><br> <hr><br>
-                    
-                     <p style="margin-bottom: 20px;background: red;border-radius: 5px;" id="cdatep"></p>
+                    <div class="warn">
+                        <p id="cdatep"></p>
+                     
+                    </div>
                         <br> <br>
                         <p>Select Date : </p>
                         <br><br>
@@ -370,10 +382,10 @@
                 India. <br>
               </p>
             </div>
-            <div class="card-action"> 
-
-                <p style="margin-bottom: 20px;background: red;border-radius: 5px;" id="pdatep"></p><br><br>
-                
+                <div class="card-action"> 
+                <div class="warn">
+                <p id="pdatep"></p><br><br>
+                </div>            
                 <p>Select Date : </p><br><br>
 <center>
                 <form class="payform" action="/bookpsnl?dis=hairfall" method="POST" > 
