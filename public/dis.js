@@ -11,14 +11,18 @@ function fullnotice(id,val){
       {
        console.log(data)
 
-       if (data == "success")
+       if (data != "success")
        {
-         var catchid = '#' + id + 'p'
-         console.log(catchid)
-         var insertext = "All appoitments of " + val + " are booked, please select another date."
-         $(catchid).text(insertext);
+        var insertext = "All appoitments of " + val + " are booked, please select another date."
+        $("#pdatep").empty();
+        $("#pdatep").text(insertext);
+        //  var catchid = '#' + id + 'p'
+        //  console.log(catchid)
+       
+        //  $(catchid).text(insertext);
  
-         $(catchid).show(1000);
+        //  $(catchid).show(1000);
+
   
        }
        else
