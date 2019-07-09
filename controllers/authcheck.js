@@ -32,6 +32,8 @@ if(data == '')
             req.body.state= data[0].state;
             req.body.district= data[0].district;
             req.body.pincode= data[0].pincode;
+            req.body.city= data[0].city;
+            req.body.landmark= data[0].landmark;
             next();
           }
           })

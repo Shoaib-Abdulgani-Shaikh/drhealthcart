@@ -52,12 +52,14 @@ var indexController = require('./controllers/index');
 var callappController = require('./controllers/callapp');
 var personalController = require("./controllers/perapp")
 var adminController = require("./controllers/admin")
+var checkinController = require("./controllers/check_in")
 
 //firing controllers
 indexController(app,authCheck);
 callappController(app,authCheck);
 personalController(app,authCheck);
 adminController(app,authCheck);
+checkinController(app,authCheck);
 
 // server listening
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`) )

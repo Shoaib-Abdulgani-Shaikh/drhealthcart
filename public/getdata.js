@@ -9,7 +9,10 @@ function myfunction()
   country : $("#country_name" ).val(),
   state : $("#state_name" ).val(),
   district : $("#disctrict_name" ).val(),
-  pincode : $("#pincode_name" ).val()
+  pincode : $("#pincode_name" ).val(),
+  history : $("#history" ).val(),
+  city : $("#city_name" ).val(),
+  landmark : $("#landmark" ).val()
 };
 
 console.log(myjson)

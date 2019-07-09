@@ -35,7 +35,8 @@ module.exports = function (app,authCheck)
 
   app.get('/hairfall',authCheck,(req,res)=>
   {
-    res.render('hairfall_2');
+    
+     res.render('hairfall_2');
   }); 
 
   app.get('/hairfall2',(req,res)=>
@@ -59,7 +60,7 @@ module.exports = function (app,authCheck)
 
   app.post('/api/mydata',urlencodedParser,authCheck,(req,res)=>
   {
-    var m = JSON.parse(req.body.body.str)
+    var m = JSON.parse(req.body.str)
     console.log(m.fname)
     console.log(m.lname)
     console.log(m.mobile)
@@ -68,6 +69,10 @@ module.exports = function (app,authCheck)
     console.log(m.state)
     console.log(m.district)
     console.log(m.pincode)
+    console.log(m.history)
+    console.log(m.landmark)
+    console.log(m.city)
+
 
     userModel.updateOne(//criteria to find the data
       { mail : req.body.uid
@@ -82,7 +87,12 @@ module.exports = function (app,authCheck)
           "country":m.country,
           "state":m.state,
           "district":m.district,
-          "pincode": m.pincode
+          "pincode": m.pincode,
+          "history":m.history,
+          "landmark":m.landmark,
+          "city":m.city
+          
+          
         } 
       },//callback function            
       function (err,data)
@@ -103,7 +113,10 @@ module.exports = function (app,authCheck)
               "country":m.country,
               "state":m.state,
               "district":m.district,
-              "pincode": m.pincode
+              "pincode": m.pincode,
+              "history":m.history,
+              "landmark":m.landmark,
+              "city":m.city
             } 
           },//callback function            
           function (err,data)
@@ -126,7 +139,7 @@ module.exports = function (app,authCheck)
   }); 
 
 
-  app.get('/placeorder',urlencodedParser,authCheck,(req,res) =>
+  app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
 {
   var onetwo = "http://localhost:5000/placeorderpure?dis="+req.query.dis;
   res.redirect(onetwo)
@@ -190,7 +203,9 @@ app.get('/placeorderpure',urlencodedParser,authCheck,(req,res) =>
       country: req.body.country,
       state: req.body.state,
       district: req.body.district,
-      pincode: req.body.pincode
+      pincode: req.body.pincode,
+      landmark:req.body.landmark,
+      city:req.body.city
 
   }
 

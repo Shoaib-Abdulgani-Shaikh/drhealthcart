@@ -9,7 +9,7 @@
 
 function myfunction() 
 {
-  alert("hello")
+
 var myjson = {
   fname : $("#first_name" ).val(),
   lname : $("#last_name" ).val(),
@@ -18,7 +18,11 @@ var myjson = {
   country : $("#country_name" ).val(),
   state : $("#state_name" ).val(),
   district : $("#disctrict_name" ).val(),
-  pincode : $("#pincode_name" ).val()
+  pincode : $("#pincode_name" ).val(),
+  pincode : $("#pincode_name" ).val(),
+  history : $("#history" ).val(),
+  landmark: $("#landmark" ).val(),
+  city: $("#city_name" ).val(),
 };
 
 console.log(myjson)
@@ -30,7 +34,7 @@ console.log(myjson)
     data:{'str':JSON.stringify(myjson)} ,
     success: function (data) 
     {
-      alert(data)
+      document.location.reload();
     }})
 
 
@@ -74,7 +78,17 @@ $("#disctrict_name" ).val(data[0].district);
 $("#pincode_name" ).focus();
 $("#pincode_name" ).val(data[0].pincode);
 
-$("#pincode_name" ).blur();
+$("#history" ).focus();
+$("#history" ).val(data[0].history);
+
+$("#city_name" ).focus();
+$("#city_name" ).val(data[0].city);
+
+$("#landmark" ).focus();
+$("#landmark" ).val(data[0].landmark);
+
+
+$("#landmark" ).blur();
 
 $('html, body').animate(
   {

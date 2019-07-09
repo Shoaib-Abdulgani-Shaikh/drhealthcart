@@ -20,7 +20,10 @@ var userSchema = new mongoose.Schema(
     country: String,
     state: String,
     district: String,
-    pincode: Number
+    pincode: Number,
+    history:String,
+    landmark:String,
+    city:String
 });
 
 //Collection

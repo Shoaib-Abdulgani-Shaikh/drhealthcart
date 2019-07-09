@@ -48,7 +48,7 @@
             <div class="nav-wrapper" style="background: #7C216F;">
               <a href="#" class="brand-logo center">My Activity</a>
               <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="collapsible.html">Dr. Health Cart</a></li>
+                <li><a href="/">Dr. Health Cart</a></li>
               </ul>
             </div>
           </nav>
@@ -104,24 +104,42 @@
                       </div>
              
                       <div class="input-field col s6">
-                          <input id="country_name" type="text" class="validate" required>
-                          <label for="country_name">Country</label>
+                          <input id="landmark" type="text" class="validate" required>
+                          <label for="landmark">Landmark</label>
                         </div>
            
+
+                      <div class="input-field col s6">
+                          <input id="city_name" type="text" class="validate" required>
+                          <label for="city_name">City</label>
+                        </div>
+           
+                        
+                        <div class="input-field col s6">
+                            <input id="disctrict_name" type="text" class="validate" required>
+                            <label for="disctrict_name">Disctrict</label>
+                          </div>
+             
+                 
                         <div class="input-field col s6">
                             <input id="state_name" type="text" class="validate" required>
                             <label for="state_name">State</label>
                           </div>
              
-                          <div class="input-field col s6">
-                              <input id="disctrict_name" type="text" class="validate" required>
-                              <label for="disctrict_name">Disctrict</label>
-                            </div>
-               
+                               <div class="input-field col s6">
+                          <input id="country_name" type="text" class="validate" required>
+                          <label for="country_name">Country</label>
+                        </div>
+           
                             <div class="input-field col s6">
                                 <input id="pincode_name" type="number" class="validate" required>
                                 <label for="pincode_name">Pincode</label>
                               </div>
+
+                              <div class="input-field col s12">
+                                  <textarea maxlength="5000" id="history" placeholder="Explain your age,sex,weight,medical history,current health problems,etc" class="materialize-textarea" required></textarea>
+                                  <label for="history">Medical History</label>
+                                </div>
                 </div>
 
                 <p>If you make any changes click on below save button.</p>
