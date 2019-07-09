@@ -11,7 +11,7 @@ function fullnotice(id,val){
       {
        console.log(data)
 
-       if (data != "success")
+       if (data == "success")
        {
          var catchid = '#' + id + 'p'
          console.log(catchid)

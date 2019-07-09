@@ -24,7 +24,7 @@ console.log(myjson)
     data:{str:JSON.stringify(myjson)} ,
     success: function (data) 
     {
-      window.location.href = "www.drhealthcart.com/signin";    
+      window.location.href = "/signin";    
     }})
 }
    
