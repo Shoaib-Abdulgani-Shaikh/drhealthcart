@@ -14,8 +14,11 @@ function fullnotice(id,val){
        if (data == "success")
        {
         var insertext = "All appoitments of " + val + " are booked, please select another date."
-        $("#pdatep").empty();
-        $("#pdatep").text(insertext);
+        $("#cdatep").hide();
+        $("#cdatep").show();
+      
+        $("#cdatep").empty();
+        $("#cdatep").html(insertext);
         //  var catchid = '#' + id + 'p'
         //  console.log(catchid)
        
