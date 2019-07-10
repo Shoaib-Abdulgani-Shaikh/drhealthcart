@@ -4,7 +4,7 @@
           {
               scrollTop: $("#icon_telephone").offset().top
           },
-           100);
+           2000);
   }
 
 function myfunction() 
@@ -94,7 +94,7 @@ $('html, body').animate(
   {
       scrollTop: $("#activities").offset().top
   },
-   100);
+   2500);
 
 
         }})
