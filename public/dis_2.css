@@ -120,7 +120,7 @@ body
 
           border: 2px solid black;
   
- 
+          width: 25%;
   font-size: 18px;
 
   background-color: white;
@@ -131,10 +131,11 @@ body
   
   cursor: pointer;
   margin-bottom: 20px;
-  width:auto;
+  
   box-shadow: 6px 6px 8px 0px #333;
 
-      
+        
+ 
         }
 
           a {
@@ -193,6 +194,57 @@ body
               text-align: center;
               width: 180px;
           }
-.card-image img{
-}
- 
+
+
+
+.razorpay-payment-button
+{
+  display: none;
+
+    width: 25%;
+                  margin-right: 10px;
+        
+                  box-shadow: 5px 5px 15px 1px #333;    
+  border:none;
+          border-bottom: 1px solid #1f1209;
+         
+          font-size: 18px;
+        
+          background-color: green;
+          color: white;
+          
+          border: 2px solid black;
+          border-radius: 5px;
+          padding: 2%;
+          
+          cursor: pointer;
+          margin-bottom: 20px;};
+
+                .packeageit
+                {
+                
+        
+                }
+
+                @media (max-width:   800px)
+                {
+                  .packeageit
+                {
+                  width: 45%;}
+                }      
+ p
+   {
+    display: inline;
+
+    }
+    .warn p
+    {
+    
+      color: white;
+      
+                     
+    }
+    .warn{
+      background: red;border-radius: 5px;
+      
+    }

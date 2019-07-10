@@ -22,84 +22,22 @@
       }
 
       </script>
-            <style>
-
-.razorpay-payment-button
-{
-  display: none;
-
-    width: 25%;
-                  margin-right: 10px;
-        
-                  box-shadow: 5px 5px 15px 1px #333;    
-  border:none;
-          border-bottom: 1px solid #1f1209;
-         
-          font-size: 18px;
-        
-          background-color: green;
-          color: white;
-          
-          border: 2px solid black;
-          border-radius: 5px;
-          padding: 2%;
-          
-          cursor: pointer;
-          margin-bottom: 20px;};
-
-                .packeageit
-                {
-                  width: 25%;
-                  margin-right: 10px;
-        
-                  box-shadow: 5px 5px 15px 1px #333;    
-  
-          border-bottom: 1px solid #1f1209;
-         
-          font-size: 18px;
-        
-          background-color: white;
-          color: black;
-          
-          border: 2px solid black;
-          border-radius: 5px;
-          padding: 2%;
-          
-          cursor: pointer;
-          margin-bottom: 20px;
-                }
- p
-   {
-    display: inline;
-
-    }
-    .warn p
-    {
-    
-      color: white;
-      
-                     
-    }
-    .warn{
-      background: red;border-radius: 5px;
-      
-    }
-</style>        
+   
     </head>
     <body style="background: whitesmoke;">
 
         <nav>
-            <div class="nav-wrapper purple">
+            <div class="nav-wrapper" style="background: #7C216F;">
               <a href="#" class="brand-logo center">Hairfall</a>
-              <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="collapsible.html">Dr. Health Cart</a></li>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Dr. Health Cart</a></li>
               </ul>
             </div>
           </nav>
       <div class="myactivitybutton"> 
           
-          <a href="myactivity" class="waves-effect white black-text btn"><i class="material-icons left">account_box</i>My activity</a>
-        
+          <a href="myactivity" class="waves-effect white black-text btn" style="text-transform: none;"><i class="material-icons left" >account_box</i>My Activity</a>
+         
       </div>
  <br>
  
@@ -110,22 +48,20 @@
     <div class="col s12 m12">
       <div class="card White darken-1">
         <div class="card-content black-text">
-          <span class="card-title" style="color: purple;"><b>Buy Medicines</b> </span> <br>
-          <p> 
+          <span class="card-title" style="color: #7C216F;"><b>Buy Medicines</b>  <i class="material-icons right medium" >add_shopping_cart</i>  </span> <br>
+          <p>
+              <b>Research & Result based  <a href="https://en.wikipedia.org/wiki/Ayurveda">Ayurveda </a>  Treament </b> 
             <ol> 
                            
-            <li><b>Research & Result based  <a href="https://en.wikipedia.org/wiki/Ayurveda">Ayurveda </a>  Treament </b></li>
               <li> 100% Herbal</li>
               <li> No side effects. </li>
               <li> Higher Concentration.</li>
               <li> Lower Dose.</li>
               <li> Better Bio Availability.</li>
-         
               
             </ol>
           </p>
-        </div> 
-            
+     
         <center>
 
           <form action="/placeorder?dis=hairfall" method="POST"> 
@@ -146,39 +82,31 @@
           <!-- <a href="/tdbookphonecall?dis=hairfall" ><button  class="packeageit"> Buy Medicines</button> </a>  <br> -->
 
       </center>
+      
         </div>
     </div>
   </div>
-   
-   
-
-
-
-
-
 
   <div class="row">
     <div class="col s12 m12">
       <div class="card White darken-1">
         <div class="card-content black-text">
-          <span class="card-title" style="color: purple;"><b>Book Phone Call Appoinment</b> </span> <br>
+          <span class="card-title" style="color: #7C216F;">               
+            <i class="material-icons right medium" >contact_phone</i><b>Book Phone Call Appoinment</b>  </span> 
       
-        </div> 
-       
-         
-            <div class="card-action">
+        
            <div class="warn">
                  <p id="cdatep"></p>
               
              </div>
-                 <br> <br>
-                 <p>Select Date : </p>
+          
+                 <p> <b> Select Date :</b>  </p>
                  <br><br>
                  <center>
                  <form class="payform" action="/bookcall?dis=hairfall" method="POST" > 
                    <script
                        src="https://checkout.razorpay.com/v1/checkout.js"    
-                       data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                       data-key="rzp_live_HOaVghw8NAgasf" 
                        data-amount="10000"
                        data-currency="INR"
                        data-name="Pay With RAZORPAY"
@@ -304,7 +232,7 @@
                      <a href="/dtwbookphonecall?dis=hairfall" ><button id="cdate5" class="packeageit"></button></a> 
                
                 -->
-                   </div>
+                
             
         </div>
     </div>
@@ -327,9 +255,10 @@
         <div class="col s12 m12">
           <div class="card White darken-1">
             <div class="card-content black-text">
-              <span class="card-title" style="color: purple;"><b>Personal Appoinment</b> </span> <br>
+      
+              <span class="card-title" style="color: #7C216F;"><i class="material-icons right medium" >local_hospital</i><b>Personal Appoinment</b>   </span> <br>
               <p> 
-               <b> Dr. HealthCart, </b>   <br>
+               <b> Dr. HealthCart Clinic, </b>   <br>
                 Vishal Residency, <br>
                 Near Yamaha Showroom, <br>
                 Mumbai-Pune Highway, <br>
@@ -338,12 +267,12 @@
                 Maharashtra,
                 India. <br>
               </p>
-            </div> 
-                <div class="card-action"> 
+      
                 <div class="warn">
                 <p id="pdatep"></p>
                 </div>       <br>   
-                <p>Select Date : </p><br><br>
+                 <p> <b> Select Date :</b>  </p>
+                <br><br>
 <center>
                 <form class="payform" action="/bookpsnl?dis=hairfall" method="POST" > 
                   <script
@@ -460,7 +389,7 @@
           
                             <p style="margin-bottom: 20px;" id="pdate5p"></p>
                           </center>
-                 </div>
+               
             </div>
         </div>
       </div>
