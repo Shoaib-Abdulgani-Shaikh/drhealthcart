@@ -119,14 +119,14 @@ body
         .packeageit
         {
           margin-right: 10px;
+          border: 2px solid black;
 
           box-shadow: 0 20px 20px -20px #333;
-  border:none;
  
   font-size: 18px;
 
-  background-color: green;
-  color: white;
+  background-color:  white;
+  color: black;
   
   border-radius: 5px;
   padding: 2%;

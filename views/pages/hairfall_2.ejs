@@ -53,13 +53,13 @@
                   margin-right: 10px;
         
                   box-shadow: 5px 5px 15px 1px #333;    
-  
+  border:none;
           border-bottom: 1px solid #1f1209;
          
           font-size: 18px;
         
-          background-color: white;
-          color: black;
+          background-color: green;
+          color: white;
           
           border: 2px solid black;
           border-radius: 5px;
@@ -106,220 +106,244 @@
 
 <div class="mycard2">
  
-  <div class="row">
-    <div class="col s12 m12">
-      <div class="card White darken-1">
-        <div class="card-content black-text">
-          <span class="card-title" style="color: purple;"><b>Buy Medicines</b> </span> <br>
-          <p> 
-            <ol> 
-                           
-            <li><b>Research & Result based  <a href="https://en.wikipedia.org/wiki/Ayurveda">Ayurveda </a>  Treament </b></li>
-              <li> 100% Herbal</li>
-              <li> No side effects. </li>
-              <li> Higher Concentration.</li>
-              <li> Lower Dose.</li>
-              <li> Better Bio Availability.</li>
-         
-              
-            </ol>
-          </p>
-        </div> 
-            
-        <center>
-
-          <form action="/placeorder?dis=hairfall" method="POST"> 
-            <script
-                src="https://checkout.razorpay.com/v1/checkout.js"    
-                data-key="rzp_test_UMYI9ZbRuBJh2s" 
-                data-amount="200000"
-                data-currency="INR"
-                
-                
-            >
-            </script>
-                   <input type="submit" class="packeageit" value="Buy Medicines">
-     
-            <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-            </form>
-            
-          <!-- <a href="/tdbookphonecall?dis=hairfall" ><button  class="packeageit"> Buy Medicines</button> </a>  <br> -->
-
-      </center>
-        </div>
-    </div>
-  </div>
    
-   
+    <div class="row">
+  
+      <div class="col s12 m12">
+            <div class="card purple">
 
-
-
-
-
-
-  <div class="row">
-    <div class="col s12 m12">
-      <div class="card White darken-1">
-        <div class="card-content black-text">
-          <span class="card-title" style="color: purple;"><b>Book Phone Call Appoinment</b> </span> <br>
+              <br><br>
+              <center>
+                  <div class="card-image" style="height: 50%;width: 50%;background: white;border-radius: 100%;border: 3px solid black;">
+                      <img src="images/sample-11.jpg" >
+                    </div>          <br><br>
       
-        </div> 
-       
-         
-            <div class="card-action">
-           <div class="warn">
-                 <p id="cdatep"></p>
-              
-             </div>
-                 <br> <br>
-                 <p>Select Date : </p>
-                 <br><br>
-                 <center>
-                 <form class="payform" action="/bookcall?dis=hairfall" method="POST" > 
-                   <script
-                       src="https://checkout.razorpay.com/v1/checkout.js"    
-                       data-key="rzp_test_UMYI9ZbRuBJh2s" 
-                       data-amount="10000"
-                       data-currency="INR"
-                       data-name="Pay With RAZORPAY"
-                       
-                   >
-                  </script>
-                   <input type="submit" class="packeageit" id="cdatepay">
-                   <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                   </form>
+                    <center>
 
-                   <input type="button" class="packeageit" id="cdate" value="click me" onclick="fullnotice(this.id,this.value)">
-
-                   
-
-
-
-                   <form class="payform" action="/bookcall1?dis=hairfall" method="POST" > 
-                     <script
-                         src="https://checkout.razorpay.com/v1/checkout.js"    
-                         data-key="rzp_test_UMYI9ZbRuBJh2s" 
-                         data-amount="10000"
-                         data-currency="INR"
-                         data-name="Pay With RAZORPAY"
-                         
-                     >
-                    </script>
-                     <input type="submit" class="packeageit" id="cdate1pay">
-                     <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                     </form>
-
-                     <input type="button" class="packeageit" id="cdate1" value="click me" onclick="fullnotice(this.id,this.value)">
-
-                     <p style="margin-bottom: 20px;" id="cdate1p"></p>
-
-                     <br><br>
-
-                     <form class="payform" action="/bookcall2?dis=hairfall" method="POST" > 
-                       <script
-                           src="https://checkout.razorpay.com/v1/checkout.js"    
-                           data-key="rzp_test_UMYI9ZbRuBJh2s" 
-                           data-amount="10000"
-                           data-currency="INR"
-                           data-name="Pay With RAZORPAY"
-                           
-                       >
-                      </script>
-                       <input type="submit" class="packeageit" id="cdate2pay">
-                       <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                       </form>
-
-                       <input type="button" class="packeageit" id="cdate2" value="click me" onclick="fullnotice(this.id,this.value)">
-
-                       <p style="margin-bottom: 20px;" id="cdate2p"></p>
-
-                       
-
-                       <form class="payform" action="/bookcall3?dis=hairfall" method="POST" > 
-                         <script
-                             src="https://checkout.razorpay.com/v1/checkout.js"    
-                             data-key="rzp_test_UMYI9ZbRuBJh2s" 
-                             data-amount="10000"
-                             data-currency="INR"
-                             data-name="Pay With RAZORPAY"
-                             
-                         >
-                        </script>
-                         <input type="submit" class="packeageit" id="cdate3pay">
-                         <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                         </form>
-
-                         <input type="button" class="packeageit" id="cdate3" value="click me" onclick="fullnotice(this.id,this.value)">
-
-                         <p style="margin-bottom: 20px;" id="cdate3p"></p>
-                         <br><br>
-
-                         <form class="payform" action="/bookcall4?dis=hairfall" method="POST" > 
-                           <script
-                               src="https://checkout.razorpay.com/v1/checkout.js"    
-                               data-key="rzp_test_UMYI9ZbRuBJh2s" 
-                               data-amount="10000"
-                               data-currency="INR"
-                               data-name="Pay With RAZORPAY"
-                               
-                           >
+                        <form action="/placeorder?dis=hairfall" method="POST"> 
+                          <script
+                              src="https://checkout.razorpay.com/v1/checkout.js"    
+                              data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                              data-amount="200000"
+                              data-currency="INR"
+                              
+                              
+                          >
                           </script>
-                           <input type="submit" class="packeageit" id="cdate4pay">
-                           <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                           </form>
- 
-                           <input type="button" class="packeageit" id="cdate4" value="click me" onclick="fullnotice(this.id,this.value)">
- 
-                           <p style="margin-bottom: 20px;" id="cdate4p"></p>
+                                 <input type="submit" class="packeageit" value="Buy Medicines">
+                   
+                          <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
+                          </form>
+                          
+                        <!-- <a href="/tdbookphonecall?dis=hairfall" ><button  class="packeageit"> Buy Medicines</button> </a>  <br> -->
 
+                    </center>
+
+
+              </center>
+                  <div class="card-stacked">
+                      
+                        </div>
+                          <div class="card-content white-text">
+                          <h5>
+                            <b>Research & Result based  <a href="https://en.wikipedia.org/wiki/Ayurveda">Ayurveda </a>  Treament </b>
+                          <ol> 
                            
-
-                           <form class="payform" action="/bookcall5?dis=hairfall" method="POST" > 
-                             <script
-                                 src="https://checkout.razorpay.com/v1/checkout.js"    
-                                 data-key="rzp_test_UMYI9ZbRuBJh2s" 
-                                 data-amount="10000"
-                                 data-currency="INR"
-                                 data-name="Pay With RAZORPAY"
-                                 
-                             >
-                            </script>
-                             <input type="submit" class="packeageit" id="cdate5pay">
-                             <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                             </form>
-   
-                             <input type="button" class="packeageit" id="cdate5" value="click me" onclick="fullnotice(this.id,this.value)">
-   
-                             <p style="margin-bottom: 20px;" id="cdate5p"></p>
-
-
-                           </center>
-                  
-
-                 <!-- <a href="/tdbookphonecall?dis=hairfall" ><button class="packeageit"></button> </a>  
-                     <a href="/twbookphonecall?dis=hairfall" ><button id="cdate1" class="packeageit"></button></a>  
-                     <a href="/dtwbookphonecall?dis=hairfall" ><button id="cdate2" class="packeageit"></button></a> <br>
-                     <a href="/tdbookphonecall?dis=hairfall" ><button id="cdate3" class="packeageit"></button> </a>  
-                     <a href="/twbookphonecall?dis=hairfall" ><button id="cdate4" class="packeageit"></button></a>  
-                     <a href="/dtwbookphonecall?dis=hairfall" ><button id="cdate5" class="packeageit"></button></a> 
-               
-                -->
-                   </div>
             
+                            <li> 100% Herbal</li>
+                            <li> No side effects. </li>
+                            <li> Higher Concentration.</li>
+                            <li> Lower Dose.</li>
+                            <li> Better Bio Availability.</li>
+                       
+                            
+                          </ol>
+</h5>
+                        </div>
+
+                      
+                                
+                      
+
+                        <!-- <div class="card-action" style="background: orangered;">
+                            <center>
+                                <a href="/placeorder?dis=hairfall" style="color: white;font-size: 20px;">Buy Medicines </a>
+                         
+                            </center>
+                          </div> -->
+  
+          </div>
+       </div>
+
+       
+
+       <div class="col s12 m12">
+          <div class="card purple">
+
+            <br><br>
+            <center>
+                <div class="card-image" style="height: 50%;width: 50%;background: white;border-radius: 100%;border: 3px solid black;">
+                    <img src="images/sample-9.jpg" style="border-radius: 100%;">
+                  </div>          <br>
+    
+
+            </center>
+                <div class="card-stacked">
+                   
+                      </div>
+                    <div class="card-content white-text">
+                     <p style="font-size: 25px"> Book Phone Call Appoinment</p><br>                     <div class="warn">
+                        <p id="cdatep"></p>
+                     
+                    </div>
+                        <br> <br>
+                        <p>Select Date : </p>
+                        <br><br>
+                        <center>
+                        <form class="payform" action="/bookcall?dis=hairfall" method="POST" > 
+                          <script
+                              src="https://checkout.razorpay.com/v1/checkout.js"    
+                              data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                              data-amount="10000"
+                              data-currency="INR"
+                              data-name="Pay With RAZORPAY"
+                              
+                          >
+                         </script>
+                          <input type="submit" class="packeageit" id="cdatepay">
+                          <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
+                          </form>
+
+                          <input type="button" class="packeageit" id="cdate" value="click me" onclick="fullnotice(this.id,this.value)">
+
+                          
+
+
+
+                          <form class="payform" action="/bookcall1?dis=hairfall" method="POST" > 
+                            <script
+                                src="https://checkout.razorpay.com/v1/checkout.js"    
+                                data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                                data-amount="10000"
+                                data-currency="INR"
+                                data-name="Pay With RAZORPAY"
+                                
+                            >
+                           </script>
+                            <input type="submit" class="packeageit" id="cdate1pay">
+                            <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
+                            </form>
+  
+                            <input type="button" class="packeageit" id="cdate1" value="click me" onclick="fullnotice(this.id,this.value)">
+  
+                            <p style="margin-bottom: 20px;" id="cdate1p"></p>
+
+                            <br><br>
+
+                            <form class="payform" action="/bookcall2?dis=hairfall" method="POST" > 
+                              <script
+                                  src="https://checkout.razorpay.com/v1/checkout.js"    
+                                  data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                                  data-amount="10000"
+                                  data-currency="INR"
+                                  data-name="Pay With RAZORPAY"
+                                  
+                              >
+                             </script>
+                              <input type="submit" class="packeageit" id="cdate2pay">
+                              <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
+                              </form>
+    
+                              <input type="button" class="packeageit" id="cdate2" value="click me" onclick="fullnotice(this.id,this.value)">
+    
+                              <p style="margin-bottom: 20px;" id="cdate2p"></p>
+
+                              
+
+                              <form class="payform" action="/bookcall3?dis=hairfall" method="POST" > 
+                                <script
+                                    src="https://checkout.razorpay.com/v1/checkout.js"    
+                                    data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                                    data-amount="10000"
+                                    data-currency="INR"
+                                    data-name="Pay With RAZORPAY"
+                                    
+                                >
+                               </script>
+                                <input type="submit" class="packeageit" id="cdate3pay">
+                                <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
+                                </form>
+      
+                                <input type="button" class="packeageit" id="cdate3" value="click me" onclick="fullnotice(this.id,this.value)">
+      
+                                <p style="margin-bottom: 20px;" id="cdate3p"></p>
+                                <br><br>
+
+                                <form class="payform" action="/bookcall4?dis=hairfall" method="POST" > 
+                                  <script
+                                      src="https://checkout.razorpay.com/v1/checkout.js"    
+                                      data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                                      data-amount="10000"
+                                      data-currency="INR"
+                                      data-name="Pay With RAZORPAY"
+                                      
+                                  >
+                                 </script>
+                                  <input type="submit" class="packeageit" id="cdate4pay">
+                                  <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
+                                  </form>
+        
+                                  <input type="button" class="packeageit" id="cdate4" value="click me" onclick="fullnotice(this.id,this.value)">
+        
+                                  <p style="margin-bottom: 20px;" id="cdate4p"></p>
+
+                                  
+
+                                  <form class="payform" action="/bookcall5?dis=hairfall" method="POST" > 
+                                    <script
+                                        src="https://checkout.razorpay.com/v1/checkout.js"    
+                                        data-key="rzp_test_UMYI9ZbRuBJh2s" 
+                                        data-amount="10000"
+                                        data-currency="INR"
+                                        data-name="Pay With RAZORPAY"
+                                        
+                                    >
+                                   </script>
+                                    <input type="submit" class="packeageit" id="cdate5pay">
+                                    <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
+                                    </form>
+          
+                                    <input type="button" class="packeageit" id="cdate5" value="click me" onclick="fullnotice(this.id,this.value)">
+          
+                                    <p style="margin-bottom: 20px;" id="cdate5p"></p>
+  
+
+                                  </center>
+                         
+    
+                        <!-- <a href="/tdbookphonecall?dis=hairfall" ><button class="packeageit"></button> </a>  
+                            <a href="/twbookphonecall?dis=hairfall" ><button id="cdate1" class="packeageit"></button></a>  
+                            <a href="/dtwbookphonecall?dis=hairfall" ><button id="cdate2" class="packeageit"></button></a> <br>
+                            <a href="/tdbookphonecall?dis=hairfall" ><button id="cdate3" class="packeageit"></button> </a>  
+                            <a href="/twbookphonecall?dis=hairfall" ><button id="cdate4" class="packeageit"></button></a>  
+                            <a href="/dtwbookphonecall?dis=hairfall" ><button id="cdate5" class="packeageit"></button></a> 
+                      
+                       -->
+                          </div>
+             
+                    
+                              
+                    
+
+                      <!-- <div class="card-action" style="background: orangered;">
+                          <center>
+                              <a href="/placeorder?dis=hairfall" style="color: white;font-size: 20px;">Buy Medicines </a>
+                       
+                          </center>
+                        </div> -->
+
         </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
+     </div>
 
 
 
