@@ -4,7 +4,7 @@
           {
               scrollTop: $("#icon_telephone").offset().top
           },
-           2000);
+           100);
   }
 
 function myfunction() 
