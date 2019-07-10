@@ -16,7 +16,7 @@ var Insta = require('instamojo-nodejs');
 //redering webpages
 module.exports = function (app,authCheck) 
 {
-  app.get('/hello',(req,res)=>
+  app.get('/paymentmsg',(req,res)=>
   {
     res.render('paymentmsg');
   }); 
