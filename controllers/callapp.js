@@ -143,7 +143,8 @@ module.exports = function (app,authCheck)
             if (error) throw error;
             console.log()
             console.log("new product saved");
-            res.redirect('/myactivity');
+            res.redirect('/paymentmsg');
+            
           });
         });
       }
@@ -216,7 +217,7 @@ app.post('/bookcall1',urlencodedParser,authCheck,(req,res) =>
             if (error) throw error;
             console.log()
             console.log("new product saved");
-            res.redirect('/myactivity');
+            res.redirect('/paymentmsg');
           });
         });
       }
@@ -288,7 +289,7 @@ app.post('/bookcall2',urlencodedParser,authCheck,(req,res) =>
             if (error) throw error;
             console.log()
             console.log("new product saved");
-            res.redirect('/myactivity');
+            res.redirect('/paymentmsg');
           });
         });
       }
@@ -362,7 +363,7 @@ app.post('/bookcall3',urlencodedParser,authCheck,(req,res) =>
             if (error) throw error;
             console.log()
             console.log("new product saved");
-            res.redirect('/myactivity');
+            res.redirect('/paymentmsg');
           });
         });
       }
@@ -438,7 +439,7 @@ app.post('/bookcall4',urlencodedParser,authCheck,(req,res) =>
             if (error) throw error;
             console.log()
             console.log("new product saved");
-            res.redirect('/myactivity');
+            res.redirect('/paymentmsg');
           });
         });
       }
@@ -513,7 +514,7 @@ app.post('/bookcall5',urlencodedParser,authCheck,(req,res) =>
             if (error) throw error;
             console.log()
             console.log("new product saved");
-            res.redirect('/myactivity');
+            res.redirect('/paymentmsg');
           });
         });
       }

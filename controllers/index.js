@@ -16,6 +16,10 @@ var Insta = require('instamojo-nodejs');
 //redering webpages
 module.exports = function (app,authCheck) 
 {
+  app.get('/hello',(req,res)=>
+  {
+    res.render('paymentmsg');
+  }); 
 
   app.get('/',(req,res)=>
   {
@@ -198,7 +202,7 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
         if (error) throw error;
         console.log()
         console.log("new product saved");
-        res.redirect('/myactivity');
+        res.redirect('/paymentmsg');
       });
     });
 
@@ -246,7 +250,7 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
 //             if (error) throw error;
 //             console.log()
 //             console.log("new product saved");
-//             res.redirect('/myactivity');
+//             res.redirect('/paymentmsg');
 //           });
 //         });
 //     })
@@ -270,7 +274,7 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
 //       if (error) throw error;
 //       console.log()
 //       console.log("new product saved");
-//       res.redirect('/myactivity');
+//       res.redirect('/paymentmsg');
 //     });
 // })
 
