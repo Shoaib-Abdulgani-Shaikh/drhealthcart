@@ -11,7 +11,7 @@ function fullnotice(id,val){
       {
        console.log(data)
 
-       if (data == "success")
+       if (data != "success")
        {
         var insertext = "All appoitments of " + val + " are booked, please select another date."
         $("#cdatep").hide();
