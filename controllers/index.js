@@ -37,17 +37,6 @@ module.exports = function (app,authCheck)
     res.render('signin');
   }); 
 
-  app.get('/hairfall',authCheck,(req,res)=>
-  {
-    
-     res.render('hairfall_2');
-  }); 
-
-  app.get('/piles',authCheck,(req,res)=>
-  {
-    
-     res.render('hairfall_2');
-  }); 
 
   app.get('/hairfall2',(req,res)=>
   {
@@ -318,5 +307,45 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
     res.render('terms');
   }); 
  
+  app.get('/hairfall',authCheck,(req,res)=>
+  {
+    
+     res.render('hairfall_2');
+  }); 
+
+  app.get('/piles',authCheck,(req,res)=>
+  {
+    
+     res.render('piles_2');
+  }); 
+
+  app.get('/allergy',authCheck,(req,res)=>
+  {
+    
+     res.render('allergy_2');
+  }); 
+
+  app.get('/sexual_problem',authCheck,(req,res)=>
+  {
+    
+     res.render('sexual_problem_2');
+  }); 
+
+
+  
+  app.get('/other_disease',authCheck,(req,res)=>
+  {
+    
+     res.render('other_disease_2');
+  }); 
+  
+  app.get('/other_disease2',(req,res)=>
+  {
+    
+     res.render('other_disease_2');
+  }); 
+  
+
+
 };
 
