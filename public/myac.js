@@ -94,7 +94,7 @@ $('html, body').animate(
   {
       scrollTop: $("#activities").offset().top
   },
-   2500);
+   2000);
 
 
         }})
