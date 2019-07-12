@@ -246,10 +246,30 @@
                     </div>
         </div>
 </div>
-      <div class="header">
-          <p> <i>drhealthcart.com</i> </p>
-        </div>      
-       
+
+<div class="cookie-bar" id="hidecookie">
+    <center>
+        <button onclick="hidecookie()"> Accept </button>
+        <p> This website uses cookies, <a href="/terms_and_conditions">learn more</a> </p> 
+    </center>
+  </div>
+  
+  <script>
+
+      var cookiestore =  localStorage.getItem("cookie");  
+      if (cookiestore == "showed")
+      {
+        document.getElementById("hidecookie").style.display="none";
+      
+      }
+        function hidecookie()
+        {
+          document.getElementById("hidecookie").style.display="none";
+          localStorage.setItem("cookie","showed");  
+        }
+      </script>
+        
+
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="dis.js"></script>
    

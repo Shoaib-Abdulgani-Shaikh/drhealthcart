@@ -1,3 +1,29 @@
+
+
+.cookie-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: red;
+  }
+
+  .cookie-bar p{
+    color: white;
+}
+
+.cookie-bar button{
+  color: white;
+  background: #7C216F;
+  border: 1px solid white;
+  font-size: 18px;
+  float: right;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+
 .headerlogo{
   background: #7C216F;color: white;margin: 0;
 }

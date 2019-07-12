@@ -16,6 +16,18 @@ var Insta = require('instamojo-nodejs');
 //redering webpages
 module.exports = function (app,authCheck) 
 {
+  app.get('/privacy_policy',(req,res)=>
+  {
+    res.render('privacy_policy');
+  }); 
+
+  app.get('/terms_and_conditions',(req,res)=>
+  {
+    res.render('terms_and_conditions');
+  }); 
+  
+
+
   app.get('/paymentmsg',(req,res)=>
   {
     res.render('paymentmsg');
