@@ -397,6 +397,16 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
     
      res.render('diabetes_2');
   });
+  app.get('/acidity',authCheck,(req,res)=>
+  {
+    
+     res.render('acidity_2');
+  });
+  app.get('/depression',authCheck,(req,res)=>
+  {
+    
+     res.render('depression_2');
+  });
 
 
     app.get('/ibs',authCheck,(req,res)=>
