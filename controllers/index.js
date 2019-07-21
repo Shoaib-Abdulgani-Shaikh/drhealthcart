@@ -60,6 +60,10 @@ module.exports = function (app,authCheck)
     res.render('constipation_2');
   });
 
+  app.get('/diabetes2',(req,res)=>
+  {
+    res.render('diabetes_2');
+  }); 
 
   app.get('/myactivity',authCheck,(req,res)=>
   {
@@ -337,6 +341,13 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
     
      res.render('constipation_2');
   }); 
+
+
+  app.get('/diabetes',authCheck,(req,res)=>
+  {
+    
+     res.render('diabetes_2');
+  });
 
   app.get('/piles',authCheck,(req,res)=>
   {
