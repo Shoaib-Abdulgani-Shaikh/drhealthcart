@@ -65,6 +65,11 @@ module.exports = function (app,authCheck)
     res.render('diabetes_2');
   }); 
 
+   app.get('/ibs2',(req,res)=>
+  {
+    res.render('ibs_2');
+  }); 
+
   app.get('/myactivity',authCheck,(req,res)=>
   {
     res.render('myactivity');
@@ -348,6 +353,14 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
     
      res.render('diabetes_2');
   });
+
+
+    app.get('/ibs',authCheck,(req,res)=>
+  {
+    
+     res.render('ibs_2');
+  });
+
 
   app.get('/piles',authCheck,(req,res)=>
   {
