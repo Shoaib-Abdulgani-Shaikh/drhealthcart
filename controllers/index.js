@@ -92,6 +92,12 @@ module.exports = function (app,authCheck)
   {
     res.render('spondylosis_2');
   });
+
+  app.get('/thyroid2',(req,res)=>
+  {
+    res.render('thyroid_2');
+  });
+  
   
 
   app.get('/myactivity',authCheck,(req,res)=>
@@ -412,6 +418,13 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
   {
     
      res.render('spondylosis_2');
+  });
+  
+
+  app.get('/thyroid',authCheck,(req,res)=>
+  {
+    
+     res.render('thyroid_2');
   });
   
 
