@@ -55,6 +55,12 @@ module.exports = function (app,authCheck)
     res.render('hairfall_2');
   }); 
 
+   app.get('/constipation2',(req,res)=>
+  {
+    res.render('constipation_2');
+  });
+
+
   app.get('/myactivity',authCheck,(req,res)=>
   {
     res.render('myactivity');
@@ -323,6 +329,13 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
   {
     
      res.render('hairfall_2');
+  }); 
+
+
+   app.get('/constipation',authCheck,(req,res)=>
+  {
+    
+     res.render('constipation_2');
   }); 
 
   app.get('/piles',authCheck,(req,res)=>
