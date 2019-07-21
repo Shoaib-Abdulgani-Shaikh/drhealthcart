@@ -83,6 +83,12 @@ module.exports = function (app,authCheck)
   }); 
 
 
+   app.get('/psoriasis2',(req,res)=>
+  {
+    res.render('psoriasis_2');
+  });
+
+
   app.get('/myactivity',authCheck,(req,res)=>
   {
     res.render('myactivity');
@@ -388,6 +394,14 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
      res.render('pcod_2');
   });
 
+
+
+   app.get('/psoriasis',authCheck,(req,res)=>
+  {
+    
+     res.render('psoriasis_2');
+  });
+  
 
 
   app.get('/piles',authCheck,(req,res)=>
