@@ -77,6 +77,12 @@ module.exports = function (app,authCheck)
   }); 
 
 
+   app.get('/pcod2',(req,res)=>
+  {
+    res.render('pcod_2');
+  }); 
+
+
   app.get('/myactivity',authCheck,(req,res)=>
   {
     res.render('myactivity');
@@ -374,6 +380,14 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
     
      res.render('obesity_2');
   });
+
+
+   app.get('/pcod',authCheck,(req,res)=>
+  {
+    
+     res.render('pcod_2');
+  });
+
 
 
   app.get('/piles',authCheck,(req,res)=>
