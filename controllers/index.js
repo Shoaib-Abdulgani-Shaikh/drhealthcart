@@ -93,6 +93,20 @@ module.exports = function (app,authCheck)
     res.render('spondylosis_2');
   });
 
+  app.get('/acidity',(req,res)=>
+  {
+    res.render('acidity_2');
+  });
+
+  app.get('/depression',(req,res)=>
+  {
+    res.render('depression_2');
+  });
+  app.get('/pimples',(req,res)=>
+  {
+    res.render('pimples_2');
+  });
+
   app.get('/thyroid2',(req,res)=>
   {
     res.render('thyroid_2');
