@@ -88,6 +88,11 @@ module.exports = function (app,authCheck)
     res.render('psoriasis_2');
   });
 
+  app.get('/spondylosis2',(req,res)=>
+  {
+    res.render('spondylosis_2');
+  });
+  
 
   app.get('/myactivity',authCheck,(req,res)=>
   {
@@ -400,6 +405,13 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
   {
     
      res.render('psoriasis_2');
+  });
+  
+
+  app.get('/spondylosis',authCheck,(req,res)=>
+  {
+    
+     res.render('spondylosis_2');
   });
   
 
