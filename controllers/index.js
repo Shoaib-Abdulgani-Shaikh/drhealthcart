@@ -70,6 +70,13 @@ module.exports = function (app,authCheck)
     res.render('ibs_2');
   }); 
 
+
+   app.get('/obesity2',(req,res)=>
+  {
+    res.render('obesity_2');
+  }); 
+
+
   app.get('/myactivity',authCheck,(req,res)=>
   {
     res.render('myactivity');
@@ -359,6 +366,13 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
   {
     
      res.render('ibs_2');
+  });
+
+
+    app.get('/obesity',authCheck,(req,res)=>
+  {
+    
+     res.render('obesity_2');
   });
 
 
