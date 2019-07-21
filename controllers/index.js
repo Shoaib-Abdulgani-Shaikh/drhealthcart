@@ -93,20 +93,31 @@ module.exports = function (app,authCheck)
     res.render('spondylosis_2');
   });
 
-  app.get('/acidity',(req,res)=>
+  app.get('/acidity2',(req,res)=>
   {
     res.render('acidity_2');
   });
 
-  app.get('/depression',(req,res)=>
+  app.get('/depression2',(req,res)=>
   {
     res.render('depression_2');
   });
-  app.get('/pimples',(req,res)=>
+  app.get('/pimples2',(req,res)=>
   {
     res.render('pimples_2');
   });
-
+  app.get('/sexual_problem2',(req,res)=>
+  {
+    res.render('sexual_problem_2');
+  });
+  app.get('/piles2',(req,res)=>
+  {
+    res.render('piles_2');
+  });
+  app.get('/allergy2',(req,res)=>
+  {
+    res.render('allergy_2');
+  });
   app.get('/thyroid2',(req,res)=>
   {
     res.render('thyroid_2');
@@ -464,15 +475,22 @@ app.post('/placeorder',urlencodedParser,authCheck,(req,res) =>
     
      res.render('allergy_2');
   }); 
+  app.get('/acidity',authCheck,(req,res)=>
+  {
+    
+     res.render('acidity_2');
+  }); 
 
   app.get('/sexual_problem',authCheck,(req,res)=>
   {
     
      res.render('sexual_problem_2');
   }); 
-
-
-  
+  app.get('/pimples',authCheck,(req,res)=>
+  {
+    
+     res.render('pimples_2');
+  }); 
   app.get('/other_disease',authCheck,(req,res)=>
   {
     
