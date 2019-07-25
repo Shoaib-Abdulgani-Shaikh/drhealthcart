@@ -1,0 +1,15 @@
+{
+  "name": "Dr. Healthcart",
+  "short_name": "Dr. Healthcart",
+  "theme_color": "#7C216F",
+  "background_color": "#7C216F",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "prefer_related_applications": false,
+  "icons": 
+    [{
+      "src": "../public/images/logo.jpeg",
+      "type": "image/jpeg"
+    }]
+ }
