@@ -26,6 +26,11 @@ app.use(passport.session());
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false, useNewUrlParser: true });
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  limit: '1000mb',
+  extended: true,
+  parameterLimit: 500000000
+}));
 
 
 //static files and render engine
