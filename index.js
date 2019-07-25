@@ -63,3 +63,11 @@ checkinController(app,authCheck);
 
 // server listening
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`) )
+
+
+
+// rzp_test_uFbKefVqF8f4Qv
+// rzp_test_uFbKefVqF8f4Qv
+
+
+// 1urBwfG3sj8WJejOAQjAmMrt
