@@ -4,6 +4,7 @@ const express = require('express')
 const app = express(); 
 const router = express.Router()
 const path = require('path')
+var forceSsl = require('force-ssl-heroku');
 
 // PAYMENT GATEWAY INTEGRATION USING INSTAMOJO
 // var Insta = require('instamojo-nodejs');
@@ -21,6 +22,7 @@ const passport = require('passport');
 app.use(session({ resave: true ,secret: '123456' , saveUninitialized: true}));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(forceSsl);
 
 //BodyParser
 var bodyParser = require('body-parser');
