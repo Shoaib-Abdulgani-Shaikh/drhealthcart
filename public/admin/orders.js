@@ -7,6 +7,7 @@ function myfunctiondone(val)
 function myfunction() 
 {
   $("#nodata").hide(1000);
+  $("#wrongkey").hide(1000);
   $("#addedPosts").remove();
 
 var myjson = $("#first_name" ).val()
