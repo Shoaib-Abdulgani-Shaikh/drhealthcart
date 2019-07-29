@@ -62,7 +62,7 @@ console.log(myjson)
   
             
         }
-        else 
+        else if(typej=="personal")
         {
           $("#activities").append("<div id='addedPosts'></div>");
 
