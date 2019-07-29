@@ -80,6 +80,9 @@ console.log(myjson)
   
             
         }
+        else{
+          $("#nodata").show(1000);
+        }
        
      
       }
