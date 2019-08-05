@@ -6,6 +6,26 @@
           },
            2000);
   }
+  //pincode validate
+  function CheckIndianZipCode()
+  {
+         var CheckZipCode = /(^\d{6}$)/;
+      var x=document.getElementById("pincode_name").value;
+      
+         if(CheckZipCode.test(x))
+  
+         {
+  
+             
+          document.getElementById("pincode_name").style.background="white";
+  
+         }else
+         {
+  
+                document.getElementById("pincode_name").style.background="red";
+          document.getElementById("pincode_name").value="  ";
+         }
+  }
 
 function myfunction() 
 {

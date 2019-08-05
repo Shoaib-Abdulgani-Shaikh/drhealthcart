@@ -7,6 +7,7 @@ function myfunctiondone(val)
 function myfunction() 
 {
   $("#nodata").hide(1000);
+  $("#wrongkey").hide(1000);
   $("#addedPosts").remove();
 
 var myjson = $("#first_name" ).val()
@@ -62,7 +63,7 @@ console.log(myjson)
   
             
         }
-        else 
+        else if(typej=="personal")
         {
           $("#activities").append("<div id='addedPosts'></div>");
 
@@ -79,6 +80,9 @@ console.log(myjson)
         }
   
             
+        }
+        else{
+          $("#wrongkey").show(1000);
         }
        
      
@@ -102,6 +106,7 @@ $(document).ready(function()
       });
 
       $("#nodata").hide();
+      $("#wrongkey").hide();
 
 
     
