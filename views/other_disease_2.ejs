@@ -246,7 +246,7 @@
                  <p> <b> Select Date :</b>  </p>
                 <br><br>
 <center>
-                <form class="payform" action="/bookpsnl?dis=other_disease" method="POST" > 
+                <!-- <form class="payform" action="/bookpsnl?dis=other_disease" method="POST" > 
                   <script
                       src="https://checkout.razorpay.com/v1/checkout.js"    
                       data-key="rzp_live_HOaVghw8NAgasf" 
@@ -258,14 +258,16 @@
                  </script>
                   <input type="submit" class="packeageit" id="pdatepay">
                   <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                  </form>
+                  </form> -->
 
+                  <a href="/bookpsnl?dis=other_disease"><button id="pdatepay" style="display: hidden;"></button></a>
+                  <button></button>
                   <input type="button" class="packeageit" id="pdate" value="click me" onclick="fullnoticepsnl(this.id,this.value)">
 
                   
 
 
-
+<!-- 
                   <form class="payform" action="/bookpsnl1?dis=other_disease" method="POST" > 
                     <script
                         src="https://checkout.razorpay.com/v1/checkout.js"    
@@ -279,12 +281,13 @@
                     <input type="submit" class="packeageit" id="pdate1pay">
                     <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
                     </form>
-  
+   -->
+                    <a href="/bookpsnl1?dis=other_disease"><button id="pdate1pay" style="display: hidden;"></button></a>
                     <input type="button" class="packeageit" id="pdate1" value="click me" onclick="fullnoticepsnl(this.id,this.value)">
   
                     <br><br>
 
-                    <form class="payform" action="/bookpsnl2?dis=other_disease" method="POST" > 
+                    <!-- <form class="payform" action="/bookpsnl2?dis=other_disease" method="POST" > 
                       <script
                           src="https://checkout.razorpay.com/v1/checkout.js"    
                           data-key="rzp_live_HOaVghw8NAgasf" 
@@ -296,13 +299,17 @@
                      </script>
                       <input type="submit" class="packeageit" id="pdate2pay">
                       <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                      </form>
-    
+                      </form> -->
+  
+                      <a href="/bookpsnl2?dis=other_disease"><button id="pdate2pay" style="display: hidden;"></button></a>
+  
+  
+  
                       <input type="button" class="packeageit" id="pdate2" value="click me" onclick="fullnoticepsnl(this.id,this.value)">
     
                       <p style="margin-bottom: 20px;" id="pdate2p"></p>
 
-
+<!-- 
                       <form class="payform" action="/bookpsnl3?dis=other_disease" method="POST" > 
                         <script
                             src="https://checkout.razorpay.com/v1/checkout.js"    
@@ -315,15 +322,17 @@
                        </script>
                         <input type="submit" class="packeageit" id="pdate3pay">
                         <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
-                        </form>
-      
+                        </form> -->
+
+                        <a href="/bookpsnl3?dis=other_disease"><button id="pdate3pay" style="display: hidden;"></button></a>
+                  
                         <input type="button" class="packeageit" id="pdate3" value="click me" onclick="fullnoticepsnl(this.id,this.value)">
       
                         <p style="margin-bottom: 20px;" id="pdate3p"></p>
 
 
                         <br><br>
-
+<!-- 
                         <form class="payform" action="/bookpsnl4?dis=other_disease" method="POST" > 
                           <script
                               src="https://checkout.razorpay.com/v1/checkout.js"    
@@ -337,11 +346,13 @@
                           <input type="submit" class="packeageit" id="pdate4pay">
                           <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
                           </form>
+         -->
+                          <a href="/bookpsnl4?dis=other_disease"><button id="pdate4pay" style="display: hidden;"></button></a>
         
                           <input type="button" class="packeageit" id="pdate4" value="click me" onclick="fullnoticepsnl(this.id,this.value)">
         
                           <p style="margin-bottom: 20px;" id="pdate4p"></p>
-
+<!-- 
 
                           <form class="payform" action="/bookpsnl5?dis=other_disease" method="POST" > 
                             <script
@@ -356,7 +367,9 @@
                             <input type="submit" class="packeageit" id="pdate5pay">
                             <input type="hidden" id="mypay" custom="Hidden Element" name="hidden">
                             </form>
-          
+         -->
+                            <a href="/bookpsnl5?dis=other_disease"><button id="pdate5pay" style="display: hidden;"></button></a>
+
                             <input type="button" class="packeageit" id="pdate5" value="click me" onclick="fullnoticepsnl(this.id,this.value)">
           
                             <p style="margin-bottom: 20px;" id="pdate5p"></p>
@@ -389,7 +402,7 @@
 
 <br><br><br><br><br>
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="dis.js"></script>
+<script src="disother.js"></script>
 
 <script>
           $(document).ready(function()
