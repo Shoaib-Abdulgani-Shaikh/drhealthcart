@@ -1,5 +1,17 @@
-
+var maindate;
 function fullnotice(id,val){
+  if (maindate == val)
+  {
+    var insertext = "All appoitments of " + val + " are booked, please select another date."
+    $("#cdatep").hide();
+    $("#cdatep").fadeIn(1000);
+  
+    $("#cdatep").empty();
+    $("#cdatep").html(insertext);
+
+  }else
+  {
+
   console.log(id)
   console.log(val)
  var queryurl =  "/callcheck?date="+val;
@@ -37,6 +49,7 @@ function fullnotice(id,val){
        
 }})
 
+}
 
 }
 
@@ -45,6 +58,17 @@ function fullnotice(id,val){
 
 
 function fullnoticepsnl(id,val){
+  if(maindate == val)
+  {
+    var insertext = "All appoitments of " + val + " are booked, please select another date."
+
+    $("#pdatep").hide();
+    $("#pdatep").fadeIn(1000);
+  
+    $("#pdatep").empty();
+    $("#pdatep").html(insertext);
+  }
+  else{
   console.log(id)
   console.log(val)
  var queryurl =  "/psnlcheck?date="+val;
@@ -73,10 +97,10 @@ function fullnoticepsnl(id,val){
         $(catchid).click();
        }
 
-       
+           
 }})
 
-
+}
 }
 
 
@@ -117,6 +141,7 @@ $(document).ready(function()
   var month5 = datetime5.getMonth()+1
   var mydate5 = datetime5.getDate()+"-"+month5+"-"+datetime5.getFullYear();
 
+  maindate = mydate
   $("#cdate").val(mydate);
   $("#cdate1").val(mydate1);
   $("#cdate2").val(mydate2);
